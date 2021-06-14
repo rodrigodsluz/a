@@ -1,18 +1,14 @@
 import { Router } from 'express';
-import CrudController from '@controllers/CrudController';
+import CityController from '@controllers/CityController';
 
 const router = Router();
 
-router.get('/', CrudController.index);
+router.get('/', CityController.index);
 
-router.post('/', CrudController.create);
+router.get('/cep', CityController.getData);
 
-router.get('/list', CrudController.read);
+router.post('/create', CityController.create);
 
-router.get('/update/:id', CrudController.modify);
-
-router.post('/update/:id', CrudController.update);
-
-router.get('/delete/:id', CrudController.delete);
+router.get('/add', CityController.add);
 
 export default router;

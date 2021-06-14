@@ -6,14 +6,30 @@
     <title>CRUD - MongoDB</title>
   </head>
   <body>
-    <h3>Cadastrar<h2>
-    <form action="/" method="POST">
-        <input type="text" placeholder="Nome" name="name">
-        <input type="text" placeholder="CPF" name="cpf">
-        <br />
-        <button type="submit">Adicionar</button>
-        <button><a href="/list">Listar cadastrados</a></button>
+     <form method='GET' action="/cep">
+        <div>
+            <div >
+                <h2>Digite o Cep para buscar a temperatura</span>
+            </div>
+            <div >
+                <input type="text" id="city" name="city" />
+            </div>
+        </div>
+        </br>
+        <div >
+            <input type="submit" value="Entre com o CEP" />
+        </div>
+         </br>
+         <div >
+            <button><a href="/add">Add cidade</a></button>
+        </div>
+        </div>
     </form>
+
+   
+    
+   
+  
   </body>
 </html>
 

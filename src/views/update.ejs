@@ -6,16 +6,19 @@
     <title>CRUD - MongoDB</title>
   </head>
   <body>
-  <h2>Atualizar cadastro</h2>
-    <% data.forEach(function(values) { %>
-      <form action="/update/<%= values._id %>" method="POST">
-        <input type="text" value="<%= values.name %>" name="name">
-        <input type="text" value="<%= values.cpf %>" name="cpf">
-        <br />  <br />
-
-        <button type="submit">Atualizar</button>
+   <form method='POST' action="/create">
+  <h2>Adicionar nova cidade</h2>
+    <div >
+      <input type="text" id="cidade" name="cidade" />
+    </div>
+     </br>
+    <div >
+        <input type="text" id="temp" name="temp" />
+    </div>
+     </br>  
+    <div >
+            <button>Add cidade</button>
+    </div>
       </form>
-    <% })
-    %>
   </body>
 </html>
